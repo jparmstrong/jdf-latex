@@ -1,0 +1,72 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TEX example created by Mr. Harper. %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{jdf}
+
+% Set Title, Author, and email
+\title{Joyner Document Format 2.0:\\ For Use in CS6460, CS6750, and CS7637}
+\author{Student Name \\ email address}
+
+\begin{document}
+
+\maketitle
+
+\thispagestyle{fancy}
+
+\begin{abstract}
+\lipsum[1]
+
+\end{abstract}
+
+\section{Heading 1}
+\lipsum[2]
+
+\subsection{Heading 2}
+\lipsum[3]
+
+\subsubsection{Heading 3}
+\lipsum[4]
+
+\paragraph*{Heading 4}\textemdash\
+\lipsum[5]
+
+\section*{Table Example}
+See Table ~\ref{table:1}.
+\begin{table}[H]
+  \begin{center}
+    \caption{Table Caption}
+    \label{table:1}
+    \begin{tabular}{l|c|r}
+      \textbf{Value 1} & \textbf{Value 2} & \textbf{Value 3}\\
+      $\alpha$ & $\beta$ & $\gamma$ \\
+      \hline
+      1 & 1110.1 & a\\
+      2 & 10.1 & b\\
+      3 & 23.113231 & c\\
+    \end{tabular}
+  \end{center}
+\end{table}
+
+\section*{Figure Example}
+See Figure ~\ref{fig::1}.
+\begin{figure}[H]
+\centering
+\includegraphics[width=5in, scale=.5]{example-image}
+\caption{Figure Caption}
+\label{fig::1}
+\end{figure}
+
+\section*{Lists}
+\begin{itemize}[leftmargin=.5in]
+\item Test
+\end{itemize}
+
+\begin{enumerate}[leftmargin=.5in]
+\item test \cite{test}
+\end{enumerate}
+
+\bibliographystyle{apacite}
+\bibliography{reference.bib}
+
+\end{document}
