@@ -55,10 +55,10 @@ labelfont=bf]{caption}        % Set caption to correct size and location
   {\normalfont\fontsize{11}{0}\bfseries}{\thesection}{0.5em}{\MakeUppercase}
 % Level 2
 \titleformat{\subsection}
-  {\normalfont\fontsize{11}{0}\bfseries}{\thesection}{0.5em}{}
+  {\normalfont\fontsize{11}{0}\bfseries}{\thesubsection}{0.5em}{}
 % Level 3
 \titleformat{\subsubsection}
-  {\normalfont\fontsize{11}{0}\bfseries}{\thesection}{0.5em}{\itshape}
+  {\normalfont\fontsize{11}{0}\bfseries}{\thesubsubsection}{0.5em}{\itshape}
 % Level 4
 \titleformat{\paragraph}[runin]
   {\normalfont\fontsize{11}{0}\bfseries\itshape}{\theparagraph}{0.5em}{}
