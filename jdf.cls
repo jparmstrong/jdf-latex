@@ -119,3 +119,13 @@ labelfont=bf]{caption}        % Set caption to correct size and location
 {\medskip\noindent
 \end{myquote}
 }
+
+% --- Bibliography --- %
+\usepackage{apacite}
+\usepackage{etoolbox}
+\makeatletter
+\newcounter{bibcount}
+\renewcommand{\thebibcount}{\arabic{bibcount}.} % format number
+\patchcmd{\@lbibitem}{\item[}{\item[\stepcounter{bibcount}{\hss\llap{\thebibcount}\quad}}{}{}
+\setlength{\bibleftmargin}{2em}
+\setlength{\bibindent}{0em}
